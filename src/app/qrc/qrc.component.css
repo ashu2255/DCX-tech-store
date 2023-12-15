@@ -1,0 +1,9 @@
+.location{
+
+  font-style: italic;
+}
+
+.location:hover{
+  color: yellow;
+  font-display: fallback;
+}

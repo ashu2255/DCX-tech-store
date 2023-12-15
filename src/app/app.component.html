@@ -1,0 +1,113 @@
+<!-- loader  
+<div class="loader_bg">
+  <div class="loader"><img src="./assets/images/loading.gif" alt="#" /></div>
+</div>
+ end loader -->
+
+<!-- header -->
+<header>
+   <!-- header inner -->
+   <div class="header">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+               <div class="full">
+                  <div class="center-desk">
+                     <div class="logo"> <a href="index.html"><span class="brand">Hotel</span></a> </div>
+                     <div class="logo"><span class="sub_brand">Name &reg;</span></div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-9 col-sm-9">
+               <div class="menu-area">
+                  <div class="limit-box">
+                     <nav class="main-menu">
+                        <ul class="menu-area-main">
+                           <li> <a routerLink="">Home</a> </li>
+                           <li> <a routerLink="about" RouterLinkActive="active">About</a> </li>
+                           <li> <a routerLink="food" RouterLinkActive="active">Food</a> </li>
+                           <li> <a routerLink="blog" RouterLinkActive="active"> Blog</a> </li>
+                           <li> <a routerLink="contact">Contact</a> </li>
+                           <li class="mean-last" RouterLinkActive="active"> <a routerLink="signup">signup</a> </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+               <li><a class="buy" routerLink="login">Login</a></li>
+            </div>
+<app-home></app-home>
+  <!--
+            <div class="col-xl-9 col-lg-9 col-md-11 col-sm-11">
+               <div class="menu-area">
+                  <div class="limit-box">
+                     <nav class="main-menu">
+                        <ul class="menu-area-main">
+                           <li><a routerLink="adminhome" RouterLinkActive="active">Admin Home</a></li>
+                           <li><a routerLink="manageusers" RouterLinkActive="active">Manage users</a></li>
+                           <li><a routerLink="manageproduct" RouterLinkActive="active">Manage Product</a></li>
+                           
+                           <li class="dropdown show">
+                                 <a class="btn dropdown-toggle" data-toggle="dropdown">
+                                    settings
+                                 </a>
+
+                                 <div class="dropdown-menu">
+                                    <a class="dropdown-item" routerLink="cpadmin" RouterLinkActive="active">Change Password</a>
+                                    <a class="dropdown-item" routerLink="epadmin" RouterLinkActive="active">Edit Profile</a>
+                                    
+                                 </div>
+                              
+                           </li>
+
+                           <li><a (click)="logout()" RouterLinkActive="active">Logout</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+          <div *ngIf="checkTokenadmin()">
+            <li><p>Welcome Admin : {{name}}</p>></li>
+         </div>-->
+ <!--
+            <div class="col-xl-9 col-lg-9 col-md-11 col-sm-11">
+               <div class="menu-area">
+                  <div class="limit-box">
+                     <nav class="main-menu">
+                        <ul class="menu-area-main">
+                           <li><a routerLink="userhome" RouterLinkActive="active">User Home</a></li>
+                           <li> <a routerLink="product" RouterLinkActive="active">product</a> </li>
+                           <li class="dropdown show">
+                              <a class="btn dropdown-toggle" data-toggle="dropdown">
+                                 settings
+                              </a>
+
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" routerLink="cpuser" RouterLinkActive="active">Change Password</a>
+                                 <a class="dropdown-item" routerLink="epuser" RouterLinkActive="active">Edit Profile</a>
+                                 <a class="dropdown-item" routerLink="wallet" RouterLinkActive="active">Add Money to Wallet</a>
+                                 
+                              </div>
+                           </li>
+                           <li><a routerLink="cart" RouterLinkActive="active">cart</a></li>
+                           <li><a routerLink="history" RouterLinkActive="active">History</a></li>
+                           <li><a RouterLinkActive="active" (click)="logout()">Logout</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+           <div *ngIf="checkTokenUser()">
+               <li>Welcome User : {{name}}</li>
+            </div>-->
+
+         </div>
+      </div>
+      <!-- end header inner -->
+   </div>
+</header>
+<!-- end header -->
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
